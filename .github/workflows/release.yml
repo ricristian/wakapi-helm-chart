@@ -1,17 +1,16 @@
-name: Release Helm Chart
+name: Release
 
 on:
   push:
     branches:
       - main
-      - refactor/Helm_chart_publishing
   pull_request:
     branches:
       - main
 
 jobs:
   release:
-    name: Release Helm Chart
+    name: Release
     runs-on: ubuntu-latest
 
     steps:
@@ -21,7 +20,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 16
+          node-version: 20
 
       - name: Install dependencies
         run: npm ci
@@ -33,7 +32,7 @@ jobs:
 
       - name: Install Chart Releaser
         run: |
-          curl -sSL https://github.com/helm/chart-releaser/releases/latest/download/chart-releaser-linux-amd64.tar.gz | tar xz
+          curl -sSL https://github.com/helm/chart-releaser/releases/download/v1.7.0/chart-releaser_1.7.0_linux_amd64.tar.gz | tar xz
           sudo mv cr /usr/local/bin/
 
       - name: Run Semantic Release
