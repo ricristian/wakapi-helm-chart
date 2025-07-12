@@ -3,6 +3,16 @@ entries:
   wakapi:
   - apiVersion: v2
     appVersion: 2.14.0
+    created: "2025-07-12T00:35:26.843727393Z"
+    description: A Helm chart for self hosted Wakapi server
+    digest: 16d3dee6d1ba54832463c50532504c65299dc623cbd7298f4aab33ee396d3cb8
+    name: wakapi
+    type: application
+    urls:
+    - https://github.com/ricristian/wakapi-helm-chart/releases/download/wakapi-1.0.12/wakapi-1.0.12.tgz
+    version: 1.0.12
+  - apiVersion: v2
+    appVersion: 2.14.0
     created: "2025-07-07T00:37:42.18600411Z"
     description: A Helm chart for self hosted Wakapi server
     digest: 189667bf55233938f46b0cf0908dd06be77c8e6cd614372e23ba441c2751d37b
@@ -91,4 +101,4 @@ entries:
     urls:
     - https://github.com/ricristian/wakapi-helm-chart/releases/download/wakapi-1.0.2/wakapi-1.0.2.tgz
     version: 1.0.2
-generated: "2025-07-07T00:37:42.18604694Z"
+generated: "2025-07-12T00:35:26.843765645Z"
