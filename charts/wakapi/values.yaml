@@ -14,6 +14,10 @@ imagePullSecrets: []
 nameOverride: ""
 fullnameOverride: ""
 
+# The strategy to use for the deployment. Defaults to "RollingUpdate".
+# Set it to "Recreate" if you have a persistent volume with "ReadWriteOnce"-accessMode to prevent multiple access to the PVC on update.
+strategyType: ""
+
 serviceAccount:
   # Specifies whether a service account should be created
   create: true
