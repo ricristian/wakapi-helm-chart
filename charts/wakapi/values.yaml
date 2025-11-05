@@ -124,6 +124,7 @@ wakapi_config:
     tls_key_path: # leave blank to not use https
     port: 3000
     base_path: /
+    # public_url: "" # required for oidc because this is the redirect-uri (default is http://localhost:3000)
 
   app:
     aggregation_time: '02:15' # time at which to run daily aggregation batch jobs
