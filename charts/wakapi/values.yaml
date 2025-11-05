@@ -149,6 +149,11 @@ wakapi_config:
     cookie_max_age: 172800
     allow_signup: true
     expose_metrics: false
+    # oidc:
+    #   name: example
+    #   client_id: example
+    #   client_secret: example
+    #   endpoint: https://example.com/.well-known/openid-configuration
 
   mail:
     enabled: false
