@@ -77,3 +77,4 @@ data:
   WAKAPI_OIDC_PROVIDERS_0_CLIENT_ID: "{{ .Values.wakapi_config.security.oidc.client_id }}"
   WAKAPI_OIDC_PROVIDERS_0_CLIENT_SECRET: "{{ .Values.wakapi_config.security.oidc.client_secret }}"
   WAKAPI_OIDC_PROVIDERS_0_ENDPOINT: "{{ .Values.wakapi_config.security.oidc.endpoint }}"
+  WAKAPI_DISABLE_LOCAL_AUTH: "{{ .Values.wakapi_config.security.disable_local_auth }}"
