@@ -145,6 +145,7 @@ wakapi_config:
     ssl: false # whether to use tls for db connection (must be true for cockroachdb) (ignored for mysql and sqlite)
 
   security:
+    disable_local_auth: false  # set this to true if oidc should be the only way of authentication
     password_salt: # CHANGE !
     insecure_cookies: false # You need to set this to 'true' when on localhost
     cookie_max_age: 172800
