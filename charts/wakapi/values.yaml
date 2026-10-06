@@ -113,6 +113,12 @@ affinity: {}
 
 exposeMetrics: false
 
+secrets:
+  enabled: false
+  # when using an externally provided secret, please refere to the configMap
+  # for a list of available keys. keys re-defined in the secret will take precedence.
+  name: wakapi-secret
+
 # Wakapi app config
 wakapi_config:
   env: development
