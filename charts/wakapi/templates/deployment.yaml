@@ -38,6 +38,10 @@ spec:
           envFrom:
             - configMapRef:
                 name: {{ include "wakapi.fullname" . }}-config-map
+            {{- if .Values.secret.enabled }}
+            - secretRef:
+                name: {{ .Values.secret.name }}
+            {{- end }}
           ports:
             - name: http
               containerPort: {{ .Values.wakapi_config.server.port }}
